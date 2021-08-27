@@ -1,190 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <!-- Bootstrap Icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-    <!-- My CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- Akhir CSS -->
-    <title>My Portfolio | Hilmi Razib Yusuf</title>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <style>
+      body {
+        background-color: #eeeeee;
+        font-family: Montserrat;
+      }
+      .navbar-brand {
+        font-family: Lora;
+      }
+      .home-text h1 {
+        font-family: Lora;
+        font-size: 38px;
+      }
+      .social-links i {
+        margin-right: 10px;
+      }
+      .list-group-item {
+        background-color: transparent;
+        color: #eeeeee;
+        border-color: #eeeeee;
+      }
+    </style>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Hilmi R Y</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#project">Project</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
+    <!-- navbar -->
+    <nav class="navbar navbar-dark bg-dark shadow-sm fixed-top">
+      <div class="container-lg">
+        <a href="#" class="navbar-brand text-warning fw-bold fs-3">Hilmi Razib Yusuf</a>
+        <div class="dropdown">
+          <button
+            class="btn btn-outline-warning dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Home</a></li>
+            <li><a class="dropdown-item" href="#">About</a></li>
+            <li><a class="dropdown-item" href="#">Portfolio</a></li>
+            <li><a class="dropdown-item" href="#">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- Akhir Navbar -->
 
-    <!-- Jumbotron -->
-    <div class="jumbotron text-center">
-      <img src="img/profile.png" alt="Hilmi Razib Yusuf" width="200" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">Hilmi Razib Yusuf</h1>
-      <p class="lead">Junior UI/UX Designer | Junior Frontend Web Developer | Junior Backend Developer</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,160L80,154.7C160,149,320,139,480,160C640,181,800,235,960,229.3C1120,224,1280,160,1360,128L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-        ></path>
-      </svg>
-      <!-- Akhir Jumbotron -->
-    </div>
-    <!-- About -->
-    <section id="about">
-      <div class="container">
-        <div class="row mb-3">
-          <div class="col text-center">
-            <h2>About Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolorum cupiditate facere minima esse facilis consequatur illum ipsum non temporibus.</p>
-          </div>
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea cupiditate omnis sed in vel, veniam beatae inventore sit quidem maiores doloribus suscipit magni, consequatur ducimus.</p>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#e2edff"
-          fill-opacity="1"
-          d="M0,64L80,106.7C160,149,320,235,480,229.3C640,224,800,128,960,106.7C1120,85,1280,139,1360,165.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir About -->
-
-    <!-- Project -->
-    <section id="project">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Projects</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/project/1.jpg" class="card-img-top" alt="Gambar 1" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
+    <!-- Home Page -->
+    <section class="home-page">
+      <div class="container-lg">
+        <div class="row min-vh-100 align-items-center align-content-center">
+          <div class="col-lg-6 mt-5 mt-md-0 order-md-last">
+            <div class="home-img text-center">
+              <img src="images/Group 11.png" alt="" class="img-fluid rounded-circle mw-100" />
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/project/2.jpg" class="card-img-top" alt="Gambar 1" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/project/1.jpg" class="card-img-top" alt="Gambar 1" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/project/4.jpg" class="card-img-top" alt="Gambar 1" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/project/5.jpg" class="card-img-top" alt="Gambar 1" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
+          <div class="col-lg-6 pt-5">
+            <div class="home-text pt-5">
+              <p class="mt-5 text-muted mb-2 fs-5">Hello I'm</p>
+              <h1 class="text-warning fw-bold text-uppercase">Full Stack Web Designer</h1>
+              <h2 class="fs-4">Hilmi Razib Yusuf</h2>
+              <p class="mt-4 text-muted">
+                I am Hilmi Razib Yusuf, a person who really enjoys the world of UI/UX Design, and I am a passionate, creative and disciplined learner.
+                I also like Web programming both in the frontend and in the backend.
+              </p>
+              <a href="#" class="btn btn-warning text-light px-3 mt-1">My Work</a>
             </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,192L40,192C80,192,160,192,240,213.3C320,235,400,277,480,266.7C560,256,640,192,720,181.3C800,171,880,213,960,240C1040,267,1120,277,1200,261.3C1280,245,1360,203,1400,181.3L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
     </section>
-    <!-- Akhir Project -->
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Contact Me</h2>
+
+    <!-- about -->
+    <section class="about py-5 bg-dark mt-3" id="about">
+      <div class="container-lg text-light">
+        <div class="row">
+          <div class="col-lg">
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-5">About Me and Skills</h2>
+            </div>
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row">
           <div class="col-md-6">
-            <form>
-              <div class="mb-3">
-                <label for="name">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" />
+            <div class="about-text" style="color: #eeeeee">
+              <p>
+                I am Hilmi Razib Yusuf, a person who really enjoys the world of UI/UX Design, and I am a passionate, creative and disciplined learner.
+                I also like Web programming both in the frontend and in the backend.
+              </p>
+              <p>
+                I have also included several projects that I have worked on, as proof that I really like my work as a ui/ux designer and web
+                development.
+              </p>
+            </div>
+            <div class="row my-4">
+              <div class="col-lg-12 d-flex align-items-center">
+                <a href="#" class="btn btn-danger me-5">Download CV</a>
+                <div class="social-links">
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="text-skills">
+              <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-4">
+                  <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item">Figma</li>
+                    <li class="list-group-item">Adobe XD</li>
+                    <li class="list-group-item">UI/UX Design</li>
+                    <li class="list-group-item">HTML dan CSS</li>
+                    <li class="list-group-item">Javascript</li>
+                    <li class="list-group-item"></li>
+                  </ul>
+                </div>
+                <div class="col-sm-4">
+                  <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item">Bootstrap</li>
+                    <li class="list-group-item">React JS</li>
+                    <li class="list-group-item">Tailwind</li>
+                    <li class="list-group-item">Git/Github</li>
+
+                    <li class="list-group-item">PHP</li>
+                    <li class="list-group-item"></li>
+                  </ul>
+                  <div class="col-sm-2"></div>
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Kirim</button>
-            </form>
+            </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#0d6efd"
-          fill-opacity="1"
-          d="M0,224L40,229.3C80,235,160,245,240,234.7C320,224,400,192,480,181.3C560,171,640,181,720,208C800,235,880,277,960,272C1040,267,1120,213,1200,197.3C1280,181,1360,203,1400,213.3L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
     </section>
-    <!-- Akhir Contact -->
-    <!-- Footer -->
-    <footer class="bg-primary text-white text-center p-3">
-      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/hilmirazib/" class="text-white fw-bold">Hilmi Razib Yusuf</a></p>
-    </footer>
-    <!-- Akhir Footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Service -->
+
+    <section class="services mt-5">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="services-title text-center">
+              <h2 class="fw-bold mb-5">What I Do?</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="service-item shadow-sm bg-white px-3 py-4 rounded">
+              <div class="icon my-3 text-danger fs-2">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3 class="fs-5 py-2">Web Development</h3>
+              <p class="text-muted">Build a responsive and dynamic website. both in terms of frontend or backend</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="service-item shadow-sm bg-white px-3 py-4 rounded">
+              <div class="icon my-3 text-danger fs-2">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h3 class="fs-5 py-2">UI/UX Design</h3>
+              <p class="text-muted">Designing the appearance of a website or mobile application. from concept to design</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="service-item shadow-sm bg-white px-3 py-4 rounded">
+              <div class="icon my-3 text-danger fs-2">
+                <i class="fas fa-server"></i>
+              </div>
+              <h3 class="fs-5 py-2">Web Service Deployment</h3>
+              <p class="text-muted">improve a website application in terms of access speed, security, and interoperability</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
